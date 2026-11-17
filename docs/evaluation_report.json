@@ -1,15 +1,35 @@
 {
-    "project": "FloodSense",
-    "model": "U-Net",
-    "dataset": "SEN1Floods11",
-    "training_samples": 16,
-    "validation_samples": 4,
-    "epochs": 5,
-    "pixel_accuracy_percent": 85.07,
-    "flood_iou_percent": 38.57,
-    "limitations": [
-        "The model was trained on only 20 samples.",
-        "The validation set contains only 4 samples.",
-        "Results are preliminary and are not suitable for real-world flood warnings."
-    ]
+  "dataset": "Kuro Siwo test_GRD",
+  "total_test_samples": 67490,
+  "samples_selected": 67490,
+  "evaluated_samples": 67490,
+  "skipped_samples": 0,
+  "batch_size": 1,
+  "threshold": 0.5,
+  "pixel_accuracy": 0.9590581176364652,
+  "flood_iou": 0.5359736986305719,
+  "precision": 0.7296790033614369,
+  "recall": 0.6687632137197222,
+  "f1_score": 0.6978943703377604,
+  "pixel_accuracy_percent": 95.90581176364653,
+  "flood_iou_percent": 53.59736986305719,
+  "precision_percent": 72.96790033614369,
+  "recall_percent": 66.87632137197222,
+  "f1_score_percent": 69.78943703377604,
+  "true_positive": 156667837,
+  "false_positive": 58040050,
+  "false_negative": 77597197,
+  "true_negative": 3020616530,
+  "total_valid_pixels": 3312921614,
+  "elapsed_seconds": 114026.05409741402,
+  "elapsed_minutes": 1900.4342349569004,
+  "elapsed_hours": 31.673903915948337,
+  "project": "FloodSense",
+  "model": "U-Net",
+  "evaluation_samples": 67490,
+  "limitations": [
+    "Evaluation was performed on 67,490 Kuro Siwo test_GRD samples.",
+    "Flood IoU and F1-score are more informative than pixel accuracy alone.",
+    "The model has not been validated for operational flood warnings."
+  ]
 }
