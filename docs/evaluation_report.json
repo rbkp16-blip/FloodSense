@@ -1,0 +1,15 @@
+{
+    "project": "FloodSense",
+    "model": "U-Net",
+    "dataset": "SEN1Floods11",
+    "training_samples": 16,
+    "validation_samples": 4,
+    "epochs": 5,
+    "pixel_accuracy_percent": 85.07,
+    "flood_iou_percent": 38.57,
+    "limitations": [
+        "The model was trained on only 20 samples.",
+        "The validation set contains only 4 samples.",
+        "Results are preliminary and are not suitable for real-world flood warnings."
+    ]
+}

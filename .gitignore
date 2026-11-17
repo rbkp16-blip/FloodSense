@@ -1,0 +1,56 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+
+# Secrets and environment variables
+.env
+!.env.example
+
+# Datasets and generated models
+data/raw/*
+data/processed/*
+data/external/*
+artifacts/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!artifacts/.gitkeep
+
+# Testing and tools
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep all local datasets and generated artifacts out of GitHub
+/data/
+/artifacts/
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pth
+*.pt
+*.tif
+*.tiff
+*.npy
+*.npz
+*.tar
+*.zip
